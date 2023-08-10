@@ -1,1 +1,134 @@
 @charset "UTF-8";
+
+/* 共通 */
+.box1 {
+    width: 65px;
+    padding: 10px;
+    margin: 10px;
+    color: #fff;
+    background: #00bbdd;
+    text-align: center;
+}
+
+/* Q5-1a */
+.flex-left {
+    display: flex;
+}
+
+/* Q5-1b */
+.flex-right {
+    display: flex;
+    flex-direction: row-reverse; /* 逆順かつ右寄せ */
+}
+
+/* Q5-1c */
+.tate-1 {
+    display: flex;
+    flex-flow: column; /* 縦並び */
+}
+
+.tate-2 {
+    display: flex;
+    flex-flow: column;
+    flex-direction: column-reverse;
+}
+
+/* Q5-2 */
+.deru {
+    display: flex;
+    flex-wrap: nowrap; /* 折り返さない */
+}
+
+.orikaesu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.re-oru {
+    display: flex;
+    flex-wrap: wrap-reverse; /* 反転　*/
+}
+
+/* Q5-3 */
+.flex-left2 {
+    display: flex;
+    justify-content: flex-start; /* 左寄せ */
+}
+
+.flex-right2 {
+    display: flex;
+    justify-content: flex-end; /* 右寄せ */
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center; /* 中央寄せ */
+}
+
+.flex-average {
+    display: flex;
+    justify-content: space-between; /* 両端に合わせて均等配置 */
+}
+
+.flex-average2 {
+    display: flex;
+    justify-content: space-around; /* 左右の余白を均等にする */
+}
+
+/* Q5-4 */
+.box2 {
+    color: #fff;
+    background: #00bbdd;
+    padding: 10px;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 200px 200px 200px; /* 列(横方向)の幅と数の指定 */
+    gap: 10px; /* グリッド間の間隔 */
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* fr=分数の意 この場合1:1:1の割合で配置される */
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.box3 {
+    color: #fff;
+    background: #00bbdd;
+    padding: 10px;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.redbox {
+    grid-column: 1 / 3; /* 配置する列範囲の指定 */
+    background: #dd0700;
+}
+
+.greenbox {
+    grid-row: 2 / 4; /* 配置する行範囲の指定 */
+    background: #0bdd00;
+}
+
+.yellowbox {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    background: #d9dd00;
+}

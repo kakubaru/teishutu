@@ -1,2 +1,38 @@
 @charset "UTF-8";
 /* 回答はここから */
+
+/* Q1-1a */
+.text-c {
+    /*テキストをインラインにする*/
+    display: inline-block;
+    padding: 10px;
+    background: #a4b3e9;
+}
+
+.textbox {
+    /*インラインにしたテキストを中央へ*/
+    text-align: center;
+}
+
+.box1 {
+    width: 200px;
+    background: #ffffff;
+    font-size: 16px;
+    padding: 20px 0;
+}
+
+/* Q1-1b */
+.text-m {
+    text-align: center;
+    width: 90px;
+    background: #a4b3e9;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.box2 {
+    width: 200px;
+    background: #fff;
+    padding: 20px 0;
+}
